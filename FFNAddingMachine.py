@@ -6,6 +6,7 @@ This script contains the FFN class used to train the adding machine
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 class FFNAddingMachine(nn.Module):
 
     def __init__(self, depth = 1, width = 32, dropout = 0.0, batch_normalize = False):
@@ -53,3 +54,4 @@ class FFNAddingMachine(nn.Module):
             
         # pass through output layer and return
         return self.layers["output"](x)
+        

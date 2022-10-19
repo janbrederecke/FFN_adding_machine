@@ -2,7 +2,9 @@
 This script contains a function to create data for the adding machine    
 """
 
+
 import numpy as np
+
 
 def create_data(size):
     """
